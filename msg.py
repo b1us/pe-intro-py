@@ -18,3 +18,15 @@ print(type(bool))
 print(type(None))
 
 print(type("something"))
+
+# Single line comment
+
+''' 
+Multi line comment 1
+'''
+
+"""
+Multi line comment 2
+"""
+
+print("inline comment") #  this is in line comment 
