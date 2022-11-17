@@ -94,3 +94,22 @@ name = input("Please anter your name: ")
 age = input("Hello, " + name + " what is your age: ")
 print("Hello,", name, "you are", age, "years old!")
 print("Hello, " + name + " you are " + age + " years old!")
+
+# arithmetic operations. 
+# works for different numbers types like floats and integers
+# floats operations to integers = floats
+
+x = 2
+y = 3
+z = 4.5
+
+result = x + y
+result2 = x + z
+print(result)
+print(result2)
+
+# operations
+# sub -
+# mul *
+# div / the result will always be floats. Div by 0 will not work
+# power **
