@@ -109,7 +109,21 @@ print(result)
 print(result2)
 
 # operations
-# sub -
-# mul *
-# div / the result will always be floats. Div by 0 will not work
-# power **
+# substracton -
+# multiply *
+# division / the result will always be `floats`. Div by 0 will not work
+# exponents **
+# integer division // (rounds down)
+# modulus %
+
+# order operations (precedence)
+# result = x % y + 4 - 7 ** (2 / 3) as follows
+# brackets/parenthesis
+# exponents
+# multiplication and divisio and modulus
+# additions and substractions
+
+# operations on different data types 
+# `integer` with `string`` = errors (TypeError)
+# `int` with `True` = works => because True = 1; 
+# `int` with `False`= error => because false = 0 => ZeroDivisionError
