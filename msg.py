@@ -127,3 +127,4 @@ print(result2)
 # `integer` with `string`` = errors (TypeError)
 # `int` with `True` = works => because True = 1; 
 # `int` with `False`= error => because false = 0 => ZeroDivisionError
+
