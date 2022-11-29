@@ -36,3 +36,14 @@ print("5", compound5)
 # demorgan2 = not (x or y) == (not x) and (not y)
 
 # Truth Tables
+# x and y or z
+#  x  y  z
+#  --------
+#  T  T  T => T
+#  F  T  T => T
+#  T  F  T => T
+#  F  F  T => T
+#  T  T  F => T
+#  F  T  F => F
+#  T  F  F => F
+#  F  F  F => F
