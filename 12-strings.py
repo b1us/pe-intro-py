@@ -23,3 +23,7 @@ print(capital)
 
 contains = "h" in s
 print(contains)
+
+t = "19"
+is_digit = t.isdigit()
+print(is_digit)
