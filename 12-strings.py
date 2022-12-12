@@ -27,3 +27,7 @@ print(contains)
 t = "19"
 is_digit = t.isdigit()
 print(is_digit)
+
+u = "hello my name is Kresna"
+words = u.split() # the default delimiter is space
+print(words)
