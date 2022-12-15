@@ -31,3 +31,7 @@ print(is_digit)
 u = "hello my name is Kresna"
 words = u.split() # the default delimiter is space
 print(words)
+
+replace = u.replace('a', 'i')
+print(replace)
+print(u)
