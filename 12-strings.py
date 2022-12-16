@@ -35,3 +35,8 @@ print(words)
 replace = u.replace('a', 'i')
 print(replace)
 print(u)
+
+# f string => 3.6
+name = "Tim"
+t = f"Hello, {name}! You are {t} years old."
+print(t)
