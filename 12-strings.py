@@ -40,3 +40,6 @@ print(u)
 name = "Tim"
 t = f"Hello, {name}! You are {t} years old."
 print(t)
+
+# string multiplication
+print(name * 5)
