@@ -43,3 +43,18 @@ print(t)
 
 # string multiplication
 print(name * 5)
+
+# multi line string (looks like multi line comment, but it has to be assigned to a string variable)
+multiline_string_double_quotation = """
+hello, my name is Kresna
+this is a double quotation multi line string
+and see you on the next section!
+"""
+print(multiline_string_double_quotation)
+
+multiline_string_single_quotation = '''
+hello, my name is Kresna
+this is a single quotation multiline string
+and see you on the next section!
+'''
+print(multiline_string_single_quotation)
