@@ -67,3 +67,7 @@ string3 = f"{name}\"s"
 print(string1)
 print(string2)
 print(string3)
+
+lst = ["t", "i", "m"]
+string = "".join(lst)
+print(string)
