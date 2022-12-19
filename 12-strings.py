@@ -58,3 +58,12 @@ this is a single quotation multiline string
 and see you on the next section!
 '''
 print(multiline_string_single_quotation)
+
+# escape character (backslash)
+string1 = f"{name}'s"
+string2 = f'{name}"s'
+string3 = f"{name}\"s"
+
+print(string1)
+print(string2)
+print(string3)
