@@ -14,3 +14,11 @@ print(contains)
 # nested tuples
 x = (1, 2, (3, 4), True, [])
 print(x[2][1])
+
+# multiply and add tuples
+y = (1, 2, 3)
+z = (4, 5, 6)
+combined = y + z
+print(combined) 
+multiplied = y * 3
+print(multiplied)
