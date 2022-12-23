@@ -10,3 +10,7 @@ print(tup)
 print(count)
 print(index)
 print(contains)
+
+# nested tuples
+x = (1, 2, (3, 4), True, [])
+print(x[2][1])
