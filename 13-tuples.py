@@ -22,3 +22,8 @@ combined = y + z
 print(combined) 
 multiplied = y * 3
 print(multiplied)
+
+a = (1, 2, 3)
+b = (a[0], 4, a[2])
+print(a)
+print(b)
