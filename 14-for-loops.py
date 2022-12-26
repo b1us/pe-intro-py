@@ -31,7 +31,7 @@ for i in range(2, 5):
 for i in range(2, 10, 2):
     print("for i in range (2, 10, 2)", i)
 
-# The range function can be used to iterate over a sequence.
+# The range function can be used to iterate over a sequence of values in an array/list.
 lst = [1, 2, 3, 4, 5, True, False]
 for i in range(len(lst)):
     print(lst[i])
