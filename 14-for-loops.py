@@ -18,6 +18,7 @@
 # The start is the first number in the sequence.
 # The stop is one more than the last number in the sequence.
 # The step is the difference between each number in the sequence.
+# The range(<start>, <stop>, <step>) function creates an interator that returns integers from `start`` (inclusive) to `stop` (exclusive), incrementing the las value by `step` every time.
 # The default start is 0.
 # The default step is 1.
 # The default stop is the start.
@@ -29,3 +30,8 @@ for i in range(2, 5):
 
 for i in range(2, 10, 2):
     print("for i in range (2, 10, 2)", i)
+
+# The range function can be used to iterate over a sequence.
+lst = [1, 2, 3, 4, 5, True, False]
+for i in range(len(lst)):
+    print(lst[i])
