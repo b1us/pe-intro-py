@@ -31,7 +31,15 @@ for i in range(2, 5):
 for i in range(2, 10, 2):
     print("for i in range (2, 10, 2)", i)
 
-# The range function can be used to iterate over a sequence of values in an array/list.
+# The range function can be used to iterate over a sequence of values in an array/list. 
 lst = [1, 2, 3, 4, 5, True, False]
-for i in range(len(lst)):
+for i in range(len(lst)): # (iterating by index)
     print(lst[i])
+
+# Re-write the above loop using a for loop. Downside is that you can't use the index (iterating by element)
+for i in lst:
+    print(i)
+
+# `Enumrate keyword` returns the index and the value of the list. (iterating by index and element)
+for idx, val in enumerate(lst):
+    print("index: ", idx, "value: ", val)
