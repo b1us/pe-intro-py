@@ -43,3 +43,16 @@ for i in lst:
 # `Enumrate keyword` returns the index and the value of the list. (iterating by index and element)
 for idx, val in enumerate(lst):
     print("index: ", idx, "value: ", val)
+
+# Break and Continue
+# The break statement can be used to exit a loop.
+# The continue statement can be used to skip the rest of the loop.
+for i in range(10):
+    if i == 5:
+        break
+    print("from break", i)
+
+for i in range(10):
+    if i == 5:
+        continue
+    print("from continue", i)
