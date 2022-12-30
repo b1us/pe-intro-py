@@ -79,3 +79,36 @@ for i in range(len(lst1)):
 for i in lst1:
     for j in i:
         print(j)
+
+
+# Some more examples
+# Is `w` exist in the string?
+st = "Hello world"
+
+for i, char in enumerate(st):
+    if char == "w":
+        print("w => index:", i)
+        break
+else:
+    print("w does not exist in the string")
+    
+# Ask a user to enter a number between 1 and 10. If the user enters a number outside of the range, ask them to try again until they enter a valid number. Print the result.
+numbers = []
+
+for i in range(3):
+    num = int(input("Enter a number between 1 and 10: "))
+
+    # if num < 1 or num > 10:
+    #     print("Try again, remember the number should be between 1 and 10")
+    # else:
+    numbers.append(num)
+
+print("Thank you. Here are your numbers:")
+print(numbers)
+
+# Pass
+# The pass statement does nothing.
+# It is used as a placeholder when a statement is required syntactically but the program requires no action.
+for i in range(10):
+    pass
+
