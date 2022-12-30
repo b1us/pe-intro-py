@@ -56,3 +56,26 @@ for i in range(10):
     if i == 5:
         continue
     print("from continue", i)
+
+# Nested For Loops
+# For loops can be nested.
+# The inner loop is executed once for each value in the outer loop.
+for i in range(3):
+    for j in range(5):
+        for k in range(2):
+            print("i = ", i, "j = ", j, "k = ", k)
+
+# Nested for loops on lists
+lst1 = [[1, 2], [3, 4], [5, 6], [7, 8]]
+for i in range(len(lst1)):
+    inner_list = lst1[i]
+    for j in range(len(inner_list)):
+        print(inner_list[j])
+
+for i in range(len(lst1)):
+    for j in range(len(lst1[i])):
+        print(lst1[i][j])
+
+for i in lst1:
+    for j in i:
+        print(j)
