@@ -112,3 +112,15 @@ print(numbers)
 for i in range(10):
     pass
 
+# For else
+# The else clause is executed after the loop completes normally.
+# The else clause is not executed if the loop is exited with a break statement.
+words = ("cat", "dog", "bird", "fish", "snake", "lizard", "horse", "cow", "pig", "chicken")
+target= "snake"
+
+for word in words:
+    if target:
+        print("Target found: ", target)
+        break
+else:
+    print("Loop completed normally")
