@@ -27,7 +27,7 @@ while not num.isdigit():
     print("That's not a integer!")
     num = input("Enter a integer: ")
 
-# Another example
+# Another example  
 z = 0
 while True:
     try:
@@ -35,3 +35,12 @@ while True:
         break
     except ValueError:
         print("That's not a number!")
+
+lst = [2, 3, 1, 2, 3, 4, 5]
+result = 0
+while result < 10:
+    for i in lst:
+        result += i
+        print(result)
+        if result > 10:
+            break
