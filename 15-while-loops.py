@@ -44,3 +44,25 @@ while result < 10:
         print(result)
         if result > 10:
             break
+
+lst2 = [2, 3, 3, -2, -2, 1]
+i = 0
+
+while i < len(lst2):
+    num = -2
+    if lst2[i] == num:
+        print("found the number", num)
+        break
+    i += 1
+else:
+    print("did not find the number", num)
+
+lst3 = [2, 3, 3, -2, -2, 1]
+i = 0
+
+while i < len(lst3):
+    if lst3[i] < 0:
+        lst3.pop(i)
+    else:
+        i += 1
+print(f"lst3:", lst3)
