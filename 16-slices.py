@@ -48,7 +48,19 @@ my_new_list15 = my_list[-1] # 10
 print(my_new_list15)
 my_new_list16 = my_list[len(my_list):0:-1] # [10, 9, 8, 7, 6, 5, 4, 3, 2]
 print(my_new_list16)
-my_new_list17 = my_list[::-1] # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1]
+my_new_list17 = my_list[::-1] # [10, 9, 8, 7, 6, 5, 4, 3, 2, 1] (reverse the list)
 print(my_new_list17)
 my_new_list18 = my_list[:] # [1, 2, 3, 4, 5, 6, 7, 8, 9, 10] (copy of the list)
 print(my_new_list18)
+
+# Slice a string or other collection data structure
+string = "Hello World"
+
+print(string[::2]) # HloWrd
+print(string[::-1]) # dlroW olleH (reverse the string)
+
+# Slice a tuple
+my_tuple = (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) # or also can be wrote as my_tuple = 1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+print(my_tuple[::2]) # (1, 3, 5, 7, 9)
+print(my_tuple[::-1]) # (10, 9, 8, 7, 6, 5, 4, 3, 2, 1) (reverse the tuple)
+print(my_tuple) # (1, 2, 3, 4, 5, 6, 7, 8, 9, 10) (original tuple is not changed)
