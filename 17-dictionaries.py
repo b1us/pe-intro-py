@@ -1,5 +1,6 @@
 # Dictionaries
 # A dictionary is a collection which is unordered, changeable and indexed. 
+# As of Python version 3.7, dictionaries are `ordered`. In Python 3.6 and earlier, dictionaries were `unordered`.
 # In Python dictionaries are written with curly brackets, and they have `keys`` and `values` pair.
 # We can add, remove, change, and look up the values of the dictionary.
 # Syntax: {key1: value1, key2: value2, key3: value3, ...}
