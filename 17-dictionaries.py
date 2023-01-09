@@ -25,6 +25,8 @@
 
 x = {2: "hello", "1": 5}
 print(x)
+print(x[2])
 
 y = {"name": "John", "age": 36}
 print(y)
+print(y["age"])
