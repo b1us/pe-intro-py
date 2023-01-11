@@ -30,3 +30,22 @@ print(x[2])
 y = {"name": "John", "age": 36}
 print(y)
 print(y["age"])
+
+# Add a new item to the dictionary
+# syntax: dict[key] = value
+z = {} # empty dictionary => {} or dict()
+
+z["name"] = "Adi"
+z["age"] = 7
+print(z)
+
+# Add an item to the dictionary that already exists => the value will be overwritten (updated)
+z["name"] = "Bagus"
+z["hoby"] = "soccer"
+print(z)
+
+# Access the items of a dictionary by referring to its key name, inside square brackets
+print(z["name"])
+
+# If we access a key that does not exist, we get an error => KeyError
+# print(z["address"]) # KeyError: 'address'
