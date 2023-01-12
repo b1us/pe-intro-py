@@ -49,3 +49,7 @@ print(z["name"])
 
 # If we access a key that does not exist, we get an error => KeyError
 # print(z["address"]) # KeyError: 'address'
+
+# Delete an item from the dictionary
+del z["hoby"]
+print(z)
