@@ -53,3 +53,10 @@ print(z["name"])
 # Delete an item from the dictionary
 del z["hoby"]
 print(z)
+
+# Check if a key exists in the dictionary by using the `in` keyword => return True or False 
+# (not the value)
+if "name" in z:
+    print("Yes, 'name' is one of the keys in the z dictionary")
+if "address" in z:
+    print("Yes, 'address' is one of the keys in the z dictionary")
