@@ -60,3 +60,9 @@ if "name" in z:
     print("Yes, 'name' is one of the keys in the z dictionary")
 if "address" in z:
     print("Yes, 'address' is one of the keys in the z dictionary")
+
+# dict_values() => list of values in the dictionary (unique in Phython 3.7)
+# values() method returns a list of all the values in the dictionary
+print(z.values()) # dict_values(['Bagus', 7])
+# if we want to access the item, we need to convert it (dict_value) to a list first using list function
+print(list(z.values())) # ['Bagus', 7]
