@@ -66,3 +66,9 @@ if "address" in z:
 print(z.values()) # dict_values(['Bagus', 7])
 # if we want to access the item, we need to convert it (dict_value) to a list first using list function
 print(list(z.values())) # ['Bagus', 7]
+
+# dict_keys() => list of keys in the dictionary (unique in Phython 3.7)
+# keys() method returns a list containing the dictionary's keys
+print(z.keys()) # dict_keys(['name', 'age'])
+# if we want to access the item, we need to convert it (dict_keys) to a list first using list function
+print(list(z.keys())) # ['name', 'age']
