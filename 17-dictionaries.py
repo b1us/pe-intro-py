@@ -72,3 +72,8 @@ print(list(z.values())) # ['Bagus', 7]
 print(z.keys()) # dict_keys(['name', 'age'])
 # if we want to access the item, we need to convert it (dict_keys) to a list first using list function
 print(list(z.keys())) # ['name', 'age']
+
+# dict_items() method returns a list containing a tuple for each key value pair
+print(z.items()) # dict_items([('name', 'Bagus'), ('age', 7)])
+# if we want to access the item, we need to convert it (dict_items) to a list first using list function
+print(list(z.items())) # [('name', 'Bagus'), ('age', 7)]
