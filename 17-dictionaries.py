@@ -77,3 +77,13 @@ print(list(z.keys())) # ['name', 'age']
 print(z.items()) # dict_items([('name', 'Bagus'), ('age', 7)])
 # if we want to access the item, we need to convert it (dict_items) to a list first using list function
 print(list(z.items())) # [('name', 'Bagus'), ('age', 7)]
+
+# Length of the dictionary
+print(len(z)) # 2
+
+# Iterate through the dictionary
+# We can loop through a dictionary by using a `for` loop.
+# When looping through a dictionary, the return value are the keys of the dictionary, but there are methods to return the values as well.
+# Dictionary items are unordered, meaning: we cannot be sure in which order the items will appear.
+for x in z:
+    print(x) # name age
