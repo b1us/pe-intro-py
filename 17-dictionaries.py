@@ -98,3 +98,12 @@ for key in z:
 # or decompose the for loop by tuple unpacking
 for key, value in z.items():
     print(key, value) # name Bagus age 7
+
+# The `get()` method returns the value of the specified key.
+# If the key does not exist, return None
+# It's also possible to add a default value to the `get()` method
+# If the key does not exist, return the default value
+
+print(z.get("name")) # Bagus
+print(z.get("address")) # None
+print(z.get("address", "Bali")) # Bali
