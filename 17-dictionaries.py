@@ -87,3 +87,14 @@ print(len(z)) # 2
 # Dictionary items are unordered, meaning: we cannot be sure in which order the items will appear.
 for x in z:
     print(x) # name age
+
+# We can not rely on the order of the items when we use a dictionary, as they are unordered, changeable, and does not allow duplicate values.
+# If we wan to accessing an index in a dictionary, we need to use the key instead of the index number.
+# We can access the items of a dictionary by referring to its key name, inside square brackets.
+# So we need to loop through the dictionary using/by the keys() method to access the values.
+for key in z:
+    value =  z[key]
+    print(key, value) # name Bagus age 7
+# or decompose the for loop by tuple unpacking
+for key, value in z.items():
+    print(key, value) # name Bagus age 7
