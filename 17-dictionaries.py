@@ -107,3 +107,24 @@ for key, value in z.items():
 print(z.get("name")) # Bagus
 print(z.get("address")) # None
 print(z.get("address", "Bali")) # Bali
+
+# Frequency of the characthers in the string
+characthers = {}
+
+string = "Hello World"
+
+for char in string:
+    characthers[char] = characthers.get(char, 0) + 1
+print(characthers) # {'H': 1, 'e': 1, 'l': 3, 'o': 2, ' ': 1, 'W': 1, 'r': 1, 'd': 1}
+
+# Another example, to count how many times each character is being inputed by the user
+count = {}
+
+while True:
+    num = input("Enter a number (enter q to quit): ")
+    if num == "q":
+        break
+    num = int(num)
+    count[num] = count.get(num, 0) + 1
+
+print(count)
