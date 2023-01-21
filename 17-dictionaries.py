@@ -128,3 +128,10 @@ while True:
     count[num] = count.get(num, 0) + 1
 
 print(count)
+
+# time complexity of the dictionary is O(1) => constant time
+# the dictionary is implemented using a hash table
+# in the other hand, the list is implemented using an array
+# time complexity of the list is O(n) => linear time
+d = {"a": 1, "b": 1, "c": 1, "d": 1} # "d" in d => time complexity is O(1), very fast
+l = ["a", "b", "c", "d"] # "d" in l => time complexity is O(n), takes longer time
