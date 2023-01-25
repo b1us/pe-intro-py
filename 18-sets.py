@@ -35,4 +35,14 @@ b = {1, 2, 3, 4, 5}
 print(b) # it will print {1, 2, 3, 4, 5}
 b.remove(5)
 print(b) # it will print {1, 2, 3, 4}
-b.remove(5) # it will raise an error as 5 does not exist
+# b.remove(5) # it will raise an error as 5 does not exist
+
+# Clear a set
+# It will remove all the items from the set
+# Syntax: set_name.clear()
+c = {1, 2, 3, 4, 5}
+print(c) # it will print {1, 2, 3, 4, 5}
+c.clear()
+print(c) # it will print set()
+
+
