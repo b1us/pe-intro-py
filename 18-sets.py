@@ -55,3 +55,9 @@ print(len(e)) # it will print 9
 # You can not add a list or dictionary to a set as they are mutable. Tuple is fine as it is immutable
 # e = {3, True, False, "hello", "world", 0,2, (1, 2, 3), [1, 2, 3], {"name": "John", "age": 36}}
 # print(len(e)) # it will raise an error (unhased type: 'list' or 'set' or 'dictionary') as list, set and dictionary are mutable
+
+# Find an item in a set
+# It will return True if the item exists in the set, otherwise it will return False
+# Syntax: item in set_name
+f = {1, 2, 3, 4, 5}
+print(1 in f) # it will print True
