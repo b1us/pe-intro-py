@@ -78,3 +78,14 @@ print(h) # it will print {4, 5, 6, 7, 8, 9, 10}
 # syntax: set_name1 | set_name2
 j = g | h
 print(j) # it will print {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+# Intersection of two sets
+# It will return a new set containing only the items that exist in both sets
+# Syntax: set_name1.intersection(set_name2)
+k = g.intersection(h)
+print(k) # it will print {4, 5}
+
+# Shorter way to find intersection of two sets / intersection shortcut
+# syntax: set_name1 & set_name2
+l = g & h
+print(l) # it will print {4, 5}
