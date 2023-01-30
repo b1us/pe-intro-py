@@ -61,3 +61,20 @@ print(len(e)) # it will print 9
 # Syntax: item in set_name
 f = {1, 2, 3, 4, 5}
 print(1 in f) # it will print True
+
+# Union of two sets
+# It will return a new set containing all items from both sets
+# The duplicate items will be removed
+# Syntax: set_name1.union(set_name2)
+g = {1, 2, 3, 4, 5}
+h = {4, 5, 6, 7, 8, 9, 10}
+
+i = g.union(h)
+print(i) # it will print {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+print(g) # it will print {1, 2, 3, 4, 5}
+print(h) # it will print {4, 5, 6, 7, 8, 9, 10}
+
+# Shorter way to union two sets / union shortcut
+# syntax: set_name1 | set_name2
+j = g | h
+print(j) # it will print {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
