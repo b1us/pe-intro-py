@@ -89,3 +89,18 @@ print(k) # it will print {4, 5}
 # syntax: set_name1 & set_name2
 l = g & h
 print(l) # it will print {4, 5}
+
+# Difference of two sets
+# It will return a new set containing only the items that exist in the first set, but not in the second set
+# The original sets will remain unchanged
+# Syntax: set_name1.difference(set_name2)
+m = g.difference(h)
+print(m) # it will print {1, 2, 3}
+# The sortcut for difference is -
+# syntax: set_name1 - set_name2
+n = g - h
+print(n) # it will print {1, 2, 3}
+
+# Different result of the way we use difference
+o = h - g
+print(o) # it will print {6, 7, 8, 9, 10}
