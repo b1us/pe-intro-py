@@ -104,3 +104,15 @@ print(n) # it will print {1, 2, 3}
 # Different result of the way we use difference
 o = h - g
 print(o) # it will print {6, 7, 8, 9, 10}
+
+# Symmetric difference of two sets
+# It will return a new set containing only the items that exist in either set, but not in both
+# The original sets will remain unchanged
+# Syntax: set_name1.symmetric_difference(set_name2)
+p = g.symmetric_difference(h)
+print(p) # it will print {1, 2, 3, 6, 7, 8, 9, 10}
+
+# Shorter way to find symmetric difference of two sets / symmetric difference shortcut
+# syntax: set_name1 ^ set_name2
+q = g ^ h
+print(q) # it will print {1, 2, 3, 6, 7, 8, 9, 10}
