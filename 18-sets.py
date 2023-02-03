@@ -116,3 +116,12 @@ print(p) # it will print {1, 2, 3, 6, 7, 8, 9, 10}
 # syntax: set_name1 ^ set_name2
 q = g ^ h
 print(q) # it will print {1, 2, 3, 6, 7, 8, 9, 10}
+
+# Update a set
+# It will add items from another set into the original set
+# The original set will be changed
+# Syntax: set_name1.update(set_name2)
+r = {1, 2, 3, 4, 5}
+s = {4, 5, 6, 7, 8, 9, 10}
+r.update(s)
+print(r) # it will print {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
