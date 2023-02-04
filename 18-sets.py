@@ -125,3 +125,21 @@ r = {1, 2, 3, 4, 5}
 s = {4, 5, 6, 7, 8, 9, 10}
 r.update(s)
 print(r) # it will print {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
+# Difference update of two sets
+# It will remove items that exist in both sets
+# The original set will be changed
+# Syntax: set_name1.difference_update(set_name2)
+t = {1, 2, 3, 4, 5}
+u = {4, 5, 6, 7, 8, 9, 10}
+t.difference_update(u)
+print(t) # it will print {1, 2, 3}
+
+# symmetric difference update of two sets
+# It will remove items that exist in both sets and add items that exist in either set
+# The original set will be changed
+# Syntax: set_name1.symmetric_difference_update(set_name2)
+v = {1, 2, 3, 4, 5}
+w = {4, 5, 6, 7, 8, 9, 10}
+v.symmetric_difference_update(w)
+print(v) # it will print {1, 2, 3, 6, 7, 8, 9, 10}
