@@ -143,3 +143,37 @@ v = {1, 2, 3, 4, 5}
 w = {4, 5, 6, 7, 8, 9, 10}
 v.symmetric_difference_update(w)
 print(v) # it will print {1, 2, 3, 6, 7, 8, 9, 10}
+
+# Superset and subset
+# A set is a superset of another set if it contains all items of the other set
+# A set is a subset of another set if it contains all items of the other set
+# Syntax: set_name1.issuperset(set_name2) or set_name1.issubset(set_name2)
+x = {1, 2, 3, 4, 5}
+y = {4, 5}
+z = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+print(x.issuperset(y)) # it will print True
+print(y.issubset(x)) # it will print True
+
+# Shortcut for superset and subset
+# syntax: set_name1 >= set_name2 (for superset)
+# set_name1 <= set_name2 (for subset)
+print(x >= y) # it will print True (x is superset of y)
+print(y <= x) # it will print True (y is subset of x)
+print(x >= z) # it will print False (x is not superset of z)
+
+# Proper superset and subset
+# A set is a proper superset of another set if it contains all items of the other set, and there are at least one item that exists only in the first set
+# A set is a proper subset of another set if it contains all items of the other set, and there are at least one item that exists only in the second set
+# Syntax: set_name1.issuperset(set_name2) or set_name1.issubset(set_name2)
+print(x.issuperset(z)) # it will print False (x is not proper superset of z)
+print(z.issubset(x)) # it will print False (z is not proper subset of x)
+
+# Shortcut for proper superset and subset
+# syntax: set_name1 > set_name2 (for proper superset)
+# set_name1 < set_name2 (for proper subset)
+print(x > z) # it will print False (x is not proper superset of z)
+print(z < x) # it will print False (z is not proper subset of x)
+print(x > y) # it will print True (x is proper superset of y)
+print(y < x) # it will print True (y is proper subset of x)
+print(x < y) # it will print False (x is not proper subset of y)
+print(y > x) # it will print False (y is not proper superset of x)
