@@ -177,3 +177,28 @@ print(x > y) # it will print True (x is proper superset of y)
 print(y < x) # it will print True (y is proper subset of x)
 print(x < y) # it will print False (x is not proper subset of y)
 print(y > x) # it will print False (y is not proper superset of x)
+
+# Wrap up example
+xx = [1, 2, 2, 3, 4, 5, 4, 3]
+set_xx = set(xx)
+
+print(set_xx)
+print(list(set(set_xx)))
+
+numbers = set()
+
+while True:
+    number = int(input("Enter a number: "))
+    if number in numbers:
+        break
+    
+    numbers.add(number)
+
+# When use set instead of dictionary
+# When we want to store only keys and don't want to store values
+# When we want to store only unique values
+# When we want to store only unique keys
+# When we want to store only unique items
+# We don't care about the order of the items
+# Frequency -> dictionary (key: value)
+# 
