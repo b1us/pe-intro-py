@@ -18,3 +18,9 @@ try:
     print(1 / 0)
 except:
     print("An error occurred.")
+
+# Accept specific exception
+try:
+    print(1 / 0)
+except ZeroDivisionError as e:
+    print("An error occurred", e)
