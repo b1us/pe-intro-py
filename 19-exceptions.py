@@ -23,4 +23,17 @@ except:
 try:
     print(1 / 0)
 except ZeroDivisionError as e:
-    print("An error occurred", e)
+    print("An error occurred:", e)
+
+# Accept multiple exceptions
+try:
+    int("hello")
+except ZeroDivisionError as e:
+    print("Zero division error occurred:", e)
+except ValueError as e:
+    print("Value error occurred:", e)
+
+try:
+    print(1 / 0)
+except (ZeroDivisionError, TypeError) as e:
+    print("An error occurred:", e)
