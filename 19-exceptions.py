@@ -37,3 +37,9 @@ try:
     print(1 / 0)
 except (ZeroDivisionError, TypeError) as e:
     print("An error occurred:", e)
+
+# General / generic exception
+try:
+    print(1 / 0)
+except Exception as e:
+    print("An error occurred:", e)
