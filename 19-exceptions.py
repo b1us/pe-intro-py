@@ -36,10 +36,20 @@ except ValueError as e:
 try:
     print(1 / 0)
 except (ZeroDivisionError, TypeError) as e:
-    print("An error occurred:", e)
+    print("[Multi] An error occurred:", e)
 
 # General / generic exception
 try:
     print(1 / 0)
 except Exception as e:
-    print("An error occurred:", e)
+    print("[Generic] An error occurred:", e)
+
+# Finally block
+# It will run no matter what happens in the try block (whether an exception is raised or not) and the except block (whether an exception is handled or not) 
+# It is used to clean up the code
+try:
+    print(1 / 0)
+except Exception as e:
+    print("[Finally] An error occurred:", e)
+finally:
+    print("The 'try except' is finished.")
