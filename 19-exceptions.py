@@ -53,3 +53,9 @@ except Exception as e:
     print("[Finally] An error occurred:", e)
 finally:
     print("The 'try except' is finished.")
+
+# Raise an error
+raise ValueError("This is an error!")
+ 
+# Raise an general exception
+raise Exception("This is an error!")
