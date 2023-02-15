@@ -77,3 +77,17 @@ while True:
         print("[num2]This is not a valid float, try again!", e)
 
 # Best practice: don't overuse general excepttion
+
+
+# Runtime vs Compile time exceptions
+
+# Runtime exceptions: exceptions that occur during the execution of a program
+# Compile time exceptions: exceptions that occur during the compilation of a program
+
+# Compiling: converting source code to machine code (binary code / executable code / bytecode) i.e the code that the computer can understand (from human readable code to machine readable code or from high level language to low level language)
+
+# Errors that may occur during compilation are called compile time errors / exceptions
+# For example: SyntaxError
+
+# Errors that may occur during execution are called runtime errors / exceptions
+# For example: ZeroDivisionError, ValueError, etc.
