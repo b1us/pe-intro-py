@@ -25,3 +25,21 @@ say_hello1()
 say_hello2("John") # "John" is the argument
 say_hello1()
 say_hello2("Jane") # "Jane" is the argument
+
+# Example3 (takes multiple parameters to accept multiple arguments): you can have as many parameters as you want
+def add_5(x, y):
+    result = x + y + 5
+    print(result)
+
+add_5(10, 20)
+
+# Example4 (we could takes variables as arguments):
+def add_100(a, b, c):
+    result = a + b + c + 5
+    print(result)
+
+num1 = 10
+num2 = 20
+num3 = 30
+add_100(num1, num2, num3)
+add_100(num1, num1, num1)
