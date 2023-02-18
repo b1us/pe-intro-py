@@ -43,3 +43,23 @@ num2 = 20
 num3 = 30
 add_100(num1, num2, num3)
 add_100(num1, num1, num1)
+
+# Return values from functions:
+# Example5 (return a value):
+def add_10(x, y):
+    result = x + y + 10
+    return result # as soon as we hit the return statement, the function stops executing
+    print("hi") # this line will never be executed 
+
+result = add_10(10, 20) # we can assign the return value to a variable
+print(result)
+
+# Example6 (multiple return values):
+def add_sub(x, y):
+    add = x + y
+    sub = x - y
+    return add, sub # we can return multiple values
+
+add, sub = add_sub(10, 20) # we can assign the return values to multiple variables
+print(add)
+print(sub)
