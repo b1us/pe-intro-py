@@ -63,3 +63,35 @@ def add_sub(x, y):
 add, sub = add_sub(10, 20) # we can assign the return values to multiple variables
 print(add)
 print(sub)
+
+# Optional parameters and default values:
+# Example7 (optional parameters):
+def add_5(x, y, z=0): # z is an optional parameter
+    result = x + y + z + 5
+    print(result)
+
+add_5(10, 20) # z is optional, so we can call the function without passing a value for z
+add_5(10, 20, 30) # z is optional, so we can call the function and pass a value for z
+
+# range() is a built-in function that returns a sequence of numbers, starting from 0 by default, and increments by 1 (by default), and ends at a specified number. So it looks like this: range(start, stop, step)
+
+def new_range(start = 0, stop = 10, step = 1): # default values are set
+    i = start
+    while i < stop:
+        print(i)
+        i += step
+
+new_range() # default values will be used
+new_range(5) # start will be 5, stop will be 10, step will be 1
+new_range(5, 20) # start will be 5, stop will be 20, step will be 1
+new_range(5, 20, 2) # start will be 5, stop will be 20, step will be 2
+
+# Positionaly
+# arguments are passed to the function in the same order as the parameters are defined
+# but we can also pass arguments by keyword / named arguments
+new_range(step=3) # start will be 0, stop will be 10, step will be 3
+new_range(start=-5) # start will be -5, stop will be 10, step will be 1
+
+# parameter that doesn't have a default value must be passed before parameters that have default values
+# new_range(step=3, 5) # this will give an error
+# new_range(5, step=3) # this will work (important). Python rules: positional arguments must come before keyword arguments
