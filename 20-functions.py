@@ -95,3 +95,14 @@ new_range(start=-5) # start will be -5, stop will be 10, step will be 1
 # parameter that doesn't have a default value must be passed before parameters that have default values
 # new_range(step=3, 5) # this will give an error
 # new_range(5, step=3) # this will work (important). Python rules: positional arguments must come before keyword arguments
+
+# Return multiple values from a function:
+def return_values(x, y):
+    return x + 1, y + 1
+
+result = return_values(10, 20)
+print(result) # this will print a tuple
+a, b = return_values(10, 20)
+print(a) # this will print 11
+print(b) # this will print 21
+print(a, b) # this will print 11 21
