@@ -106,3 +106,38 @@ a, b = return_values(10, 20)
 print(a) # this will print 11
 print(b) # this will print 21
 print(a, b) # this will print 11 21
+
+# Example8 (remove characters from a string)
+def remove_chars(base, chars):
+    new_string = base
+    for char in chars:
+        new_string = new_string.replace(char, "")
+    return new_string
+
+print(remove_chars("hello world", "l")) # this will print heo word
+
+# Example9 (sum of all numbers in a list)
+def sum_list(numbers):
+    total = 0
+    for num in numbers:
+        total += num
+    return total
+
+print(sum_list([1, 2, 3, 4, 5])) # this will print 15
+
+# Example10 (sum of all numbers in each lists)
+def sum_each_lists(lst1, lst2):
+    sum_list1 = sum_list(lst1)
+    sum_list2 = sum_list(lst2)
+    return sum_list1, sum_list2
+
+print(sum_each_lists([1, 2, 3], [4, 5, 6])) # this will print (6, 15)
+
+# Example11 (sum of all numbers in all lists)
+def sum_all_lists(*lists): # *lists is a tuple
+    total = 0
+    for lst in lists:
+        total += sum_list(lst)
+    return total
+
+print(sum_all_lists([1, 2, 3], [4, 5, 6], [7, 8, 9])) # this will print 45
