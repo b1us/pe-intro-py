@@ -141,3 +141,17 @@ def sum_all_lists(*lists): # *lists is a tuple
     return total
 
 print(sum_all_lists([1, 2, 3], [4, 5, 6], [7, 8, 9])) # this will print 45
+
+# Scope of functions:
+# Should be define before calling / using them
+
+# Nested functions:
+# Example12 (nested functions):
+def outer():
+    print("outer function")
+    def inner(): # it's only accessible inside the `outer`` function (it's a local function)
+        print("inner function")
+    inner()
+
+outer()
+# inner() # this will give an error
