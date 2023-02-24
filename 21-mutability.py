@@ -18,3 +18,17 @@ a = 1
 b = a
 a += 1
 print(a, b) # 2 1 # a and b are two different objects
+
+# list
+a = [1, 2, 3]
+b = a
+a.append(4)
+print(a, b) # [1, 2, 3, 4] [1, 2, 3, 4] # a and b are the same object
+
+# to know if two objects are the same object
+print(a is b) # True # is operator checks if two objects are the same object (it is not the same as == `equivalent` operator)
+# but below is not the same object
+c = []
+d = []
+print(c is d) # False # two different objects
+print(c == d) # True # equivalent
