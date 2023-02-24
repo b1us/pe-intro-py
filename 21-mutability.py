@@ -13,3 +13,8 @@
 x = 5 # object 5 is immutable
 x += 1 # brand new object 6 is created
 print(x) # 6
+
+a = 1
+b = a
+a += 1
+print(a, b) # 2 1 # a and b are two different objects
