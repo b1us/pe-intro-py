@@ -32,3 +32,13 @@ c = []
 d = []
 print(c is d) # False # two different objects
 print(c == d) # True # equivalent
+
+# Id function returns the identity of an object (the memory address of the object) in base 10.
+e = 1
+f = 1
+print(id(a), id(b)) # 1400000000000 1400000000000
+print(id(c), id(d)) # 1400000000001 1400000000002
+print(id(e), id(f)) # 1400000000003 1400000000003 # same object because of the optimization of Python (integers from -5 to 256 are cached) 
+# (https://docs.python.org/3/c-api/long.html#c.PyLong_FromLong) 
+# (https://stackoverflow.com/questions/306313/is-operator-behaves-unexpectedly-with-integers) 
+# (https://stackoverflow.com/questions/306313/is-operator-behaves-unexpectedly-with-integers/306332#306332)
