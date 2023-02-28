@@ -58,3 +58,30 @@ h = []
 add_to_list(h, 1)
 add_to_list(h, 2)
 print(h) # [1, 2]
+
+# Example dictionary
+i = {}
+i['k'] = 'v'
+
+j = i
+j['k2'] = 'v2'
+
+print(j, i) # {'k': 'v', 'k2': 'v2'} {'k': 'v', 'k2': 'v2'} # same object # affects the original object
+
+# Example set
+k = set()
+l = k
+
+k.add(1)
+l.add(2)
+
+print(k, l) # {1, 2} {1, 2} # same object # affects the original object
+print(k is l) # True
+
+def add_to_set(s, item):
+    s.add(item) # be careful! it's directly modifying the set inside the function
+    # print(s) # {1, 2} # modifying object in place
+
+m = set()
+add_to_set(m, 1)
+print(m) # {1}
