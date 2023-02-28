@@ -46,3 +46,15 @@ print(id(e), id(f)) # 1400000000003 1400000000003 # same object because of the o
 # Example tuple
 g = (1, 2, 3)
 # g[0] = 4 # TypeError: 'tuple' object does not support item assignment because tuple is `immutable`
+
+# List and function
+# List is mutable, so it can be changed inside a function.
+def add_to_list(lst, item):
+    lst.append(item) # be careful! it's directly modifying the list inside the function
+    # print(lst) # [1, 2] # modifying object in place
+
+h = []
+
+add_to_list(h, 1)
+add_to_list(h, 2)
+print(h) # [1, 2]
