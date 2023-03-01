@@ -85,3 +85,33 @@ def add_to_set(s, item):
 m = set()
 add_to_set(m, 1)
 print(m) # {1}
+
+# Copying a mutable object
+# To copy a mutable object into a new object, 
+# We can use the `copy` module or use slicing.
+# `copy` module has `copy` and `deepcopy` functions.
+# `copy` function creates a shallow copy of an object.
+# `deepcopy` function creates a deep copy of an object.
+# A shallow copy constructs a new compound object and then (to the extent possible) inserts references into it to the objects found in the original.
+# A deep copy constructs a new compound object and then, recursively, inserts copies into it of the objects found in the original.
+# (https://docs.python.org/3/library/copy.html)
+
+
+# Copy by slicing in list
+n = [1, 2, 3]
+o = n[:] # copy by slicing
+n.append(4)
+print(n, o) # [1, 2, 3, 4] [1, 2, 3]
+
+# Copy in set and dictionary, we can use `copy` module
+set1 = {1, 2, 3}
+set2 = set1.copy() # shallow copy
+
+set1.add(4)
+print(set1, set2) # {1, 2, 3, 4} {1, 2, 3}
+
+dict1 = {'k': 'v'}
+dict2 = dict1.copy() # shallow copy
+
+dict1['k2'] = 'v2'
+print(dict1, dict2) # {'k': 'v', 'k2': 'v2'} {'k': 'v'}
