@@ -115,3 +115,32 @@ dict2 = dict1.copy() # shallow copy
 
 dict1['k2'] = 'v2'
 print(dict1, dict2) # {'k': 'v', 'k2': 'v2'} {'k': 'v'}
+
+# Nested mutable objects
+# If we have a nested mutable object, we need to use `deepcopy` function in `copy` module.
+# `deepcopy` function creates a deep copy of an object.
+# A deep copy constructs a new compound object and then, recursively, inserts copies into it of the objects found in the original.
+lst1 = [[1, 2, 3], [4, 5, 6]]
+lst1[0].append(7)
+print(lst1) # [[1, 2, 3, 7], [4, 5, 6]] # affects the original object because it's a nested mutable object
+lst1[1].append(8)
+print(lst1) # [[1, 2, 3, 7], [4, 5, 6, 8]] # affects the original object because it's a nested mutable object
+
+# what about dictinary and set? => they are mutable objects
+# let's see
+lst2 = [1, 2, 3]
+dict3 = {'k': lst2}
+
+lst2.append(4) # affects the original object because it's a nested mutable object
+print(dict3) # {'k': [1, 2, 3, 4]}
+
+# Storing mutable object in an immutable object
+# If we store a mutable object in an immutable object, we can change the mutable object eg. list, but we cannot change the immutable object eg. tuple.
+p = [1, 2]
+q = [3, 4]
+
+tup1 = (p, q)
+print(tup1) # ([1, 2], [3, 4])
+
+p.append(5)
+print(tup1) # ([1, 2, 5], [3, 4]) # affects the original object because it's a nested mutable object (list) in an immutable object (tuple) but we can not change the tuple itself (tup1)
