@@ -144,3 +144,29 @@ print(tup1) # ([1, 2], [3, 4])
 
 p.append(5)
 print(tup1) # ([1, 2, 5], [3, 4]) # affects the original object because it's a nested mutable object (list) in an immutable object (tuple) but we can not change the tuple itself (tup1)
+
+# Copying a mutable object 
+# To copy a mutable object into a new object,
+# We can use the `copy` module or use slicing => `shalow copy`
+q = [[1, 2, 3]]
+r = q[:] # copy by slicing
+q.append(4)
+print(q, r) # [[1, 2, 3], 4] [[1, 2, 3]] # affects the original object
+
+s = q[0]
+s.append(5)
+print(q, r, s) # [[1, 2, 3, 5], 4] [[1, 2, 3, 5]] [1, 2, 3, 5] # affects the original object
+
+t = q[0][:]
+t.append(6)
+print(q, r, s, t) # [[1, 2, 3, 5], 4] [[1, 2, 3, 5]] [1, 2, 3, 5] [1, 2, 3, 5, 6] # affects the original object
+
+# Deep copy
+# To copy a mutable object into a new object,
+# We can use the `copy` module or use slicing => `deep copy`
+# `copy` module has `copy` and `deepcopy` functions.
+# `copy` function creates a shallow copy of an object.
+# `deepcopy` function creates a deep copy of an object.
+# A shallow copy constructs a new compound object and then (to the extent possible) inserts references into it to the objects found in the original.
+# A deep copy constructs a new compound object and then, recursively, inserts copies into it of the objects found in the original.
+# (https://docs.python.org/3/library/copy.html)
