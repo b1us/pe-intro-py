@@ -36,3 +36,13 @@ def f():
 inp2 = int(input('Enter a number: '))
 f()
 print(f"from outside the function: {value}")
+
+# More examples
+def add_5(b):
+    b = b + 5 # b is a local variable
+    print(f"inside", b) # 15 
+
+b = 10 # b is a global variable
+print(f"outside", b) # 10 
+add_5(b)
+print(f"outside", b) # 10
