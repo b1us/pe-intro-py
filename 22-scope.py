@@ -46,3 +46,13 @@ b = 10 # b is a global variable
 print(f"outside", b) # 10 
 add_5(b)
 print(f"outside", b) # 10
+
+# example with list
+def append_5(lst):
+    lst.append(5) # lst is a local variable
+    print(f"inside", lst) # [5]
+
+lst = [] # lst is a global variable
+print(f"outside", lst) # []
+append_5(lst)
+print(f"outside", lst) # [5]
