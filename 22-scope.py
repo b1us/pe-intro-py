@@ -56,3 +56,25 @@ lst = [] # lst is a global variable
 print(f"outside", lst) # []
 append_5(lst)
 print(f"outside", lst) # [5]
+
+# Global keyword
+#
+# if we want to change the global variable inside the function, we need to use the global keyword
+# considered as a bad practice
+# avoid using it at all costs
+# if we use it, we should use it only once in the function
+# this is just an example for educational purposes, we should not use it in real life
+
+value = 5
+
+def foo():
+    global value
+    value = 10 # we are changing the global variable value of 5 to 10 inside the function every time we call the function
+
+print(value) # 5
+foo()
+print(value) # 10
+
+value = 20
+foo()
+print(value) # 10 => the global variable is changed inside the foo() function 
