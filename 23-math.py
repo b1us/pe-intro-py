@@ -1,5 +1,28 @@
 # Math
 #
+# abs()	Returns the absolute value of a number
 x = abs(-9)
-
 print(x) # 9
+
+y = abs(9.5)
+print(y) # 9.5
+
+# max()	Returns the largest item in an iterable
+x = max(1, 2, 3, 4, 5)
+print(x) # 5
+
+y = max([1, 2, 3, 4, 5])
+print(y) # 5
+
+z = max("Hello World")
+print(z) # r
+
+# min()	Returns the smallest item in an iterable
+x = min(1, 2, 3, 4, 5)
+print(x) # 1
+
+y = min([1, 2, 3, 4, 5])
+print(y) # 1
+
+z = min("Hello World")
+print(z) #   (space)
