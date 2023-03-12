@@ -26,3 +26,16 @@ print(y) # 1
 
 z = min("Hello World")
 print(z) #   (space)
+
+# sum()	Sums the items of an iterable
+x = sum([1, 2, 3, 4, 5])
+print(x) # 15
+
+y = sum((1, 2, 3, 4, 5))
+print(y) # 15
+
+z = sum({1, 2, 3, 4, 5})
+print(z) # 15
+
+a = sum(1, 2, 3, 4, 5)
+# print(a) # TypeError: sum expected at most 2 arguments, got 5 (it's not iterable)
