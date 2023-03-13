@@ -39,3 +39,16 @@ print(z) # 15
 
 a = sum(1, 2, 3, 4, 5)
 # print(a) # TypeError: sum expected at most 2 arguments, got 5 (it's not iterable)
+
+# round()	Rounds a numbers
+x = round(9.51)
+print(x) # 10
+
+y = round(9.49)
+print(y) # 9
+
+z = round(9.49, 1) # 1 is the number of decimals
+print(z) # 9.5
+
+a = round(9.494, 2)
+print(a) # 9.49
