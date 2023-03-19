@@ -1,0 +1,33 @@
+# Miscellaneous Python Syntax
+
+# 1. Comprension
+# is a way to create a list, dictionary or tuple in a single line of code
+
+# 1.1 List comprension
+lst = []
+for i in range(1, 11):
+    lst.append(i)
+
+print(lst)
+
+lst = [i for i in range(1, 11)] # put the for loop inside the list
+print(lst)
+
+lst = [i + 1 for i in range(1, 11)] # put the for loop inside the list
+print(lst)
+
+lst = [i * 2 for i in range(1, 11)] # put the for loop inside the list
+print(lst)
+
+lst = [i for i in range(1, 11) if i % 2 == 0] # put the if statement inside the list
+print(lst)
+
+lst = [i * j for i in range(1, 11) for j in range(5)] # put the for loop inside the list
+print(lst)
+
+# 1.2 Dictionary comprension
+
+# 1.3 Set comprension
+
+# 1.4 Tuple comprension (doesn't work) => (generator object) - advanced topic
+
