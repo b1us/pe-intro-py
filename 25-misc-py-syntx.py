@@ -29,5 +29,8 @@ print(lst)
 
 # 1.3 Set comprension
 
+s = {i for i in range(1, 11)}
+print(s) # {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
+
 # 1.4 Tuple comprension (doesn't work) => (generator object) - advanced topic
 
