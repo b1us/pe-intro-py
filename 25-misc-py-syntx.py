@@ -50,3 +50,29 @@ print(x, y, z) # 10 20 30
 x, y, z = [10, 20, 30]
 print(x, y, z) # 10 20 30
 
+# Docstring (documentation string)
+# is a string that is the first statement in a module, function, class, or method definition
+# It is used to document the purpose of the function, class, method, etc.
+
+def add(a, b):
+    """
+    This function adds two numbers
+    """
+    return a + b
+
+print(add.__doc__) # This function adds two numbers
+
+# Help function
+# is a built-in function that displays the documentation string of a function, class, method, etc.
+
+help(add) # Help on function add in module __main__:
+            # add(a, b)
+            #     This function adds two numbers
+
+# Lambda function
+# is a small anonymous function
+# A lambda function can take any number of arguments, but can only have one expression
+
+# 1.1 Lambda function with one argument
+x = lambda a: a + 10
+print(x(5)) # 15
