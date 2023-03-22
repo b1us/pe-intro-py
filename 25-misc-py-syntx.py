@@ -40,3 +40,13 @@ print(s) # {1, 2, 3, 4, 5, 6, 7, 8, 9, 10}
 # Multiple assignment
 x = y = z = 10
 print(x, y, z) # 10 10 10
+
+# Unpacking 
+# Unpacking a tuple into individual values (advanced topic)
+x, y, z = 10, 20, 30 # or x, y, z = (10, 20, 30)
+print(x, y, z) # 10 20 30
+
+# Unpacking a list into individual values (advanced topic)
+x, y, z = [10, 20, 30]
+print(x, y, z) # 10 20 30
+
