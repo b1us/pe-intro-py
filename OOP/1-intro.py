@@ -27,3 +27,12 @@ print(type(z)) # <class 'list'>
 # Class is something that built in Python that defines the behavior of an object (interactions with other objects in the program)
 # Exaple:
 # x + y # TypeError: unsupported operand type(s) for +: 'int' and 'str'
+
+# Methods
+# Methods are functions that are defined inside the body of a class
+
+# Example:
+z.append(4) # append is a method of the list class
+print(z) # [1, 2, 3, 4]
+
+y.append("a") # AttributeError: 'str' object has no attribute 'append'
