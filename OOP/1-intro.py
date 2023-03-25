@@ -36,3 +36,17 @@ z.append(4) # append is a method of the list class
 print(z) # [1, 2, 3, 4]
 
 y.append("a") # AttributeError: 'str' object has no attribute 'append'
+
+# Almost everything in Python is an object
+def func():
+    print("Hello")
+
+print(type(func)) # <class 'function'>
+
+# Instances
+# Instances are specific objects that are created from a particular class
+x = 1 # x is an instance of the int class
+y = "some text" # y is an instance of the str class
+
+# Classes
+# Classes are used to create new user-defined data structures that contain arbitrary information about something
