@@ -49,3 +49,26 @@ print(person2.age) # 30
 person3 = Person("Jane", 25) # Person3 instantiated
 print(person3.name) # Jane
 print(person3.age) # 25
+
+# Attributes
+# Attributes are pieces of information that are associated with a class or an object
+# Attributes can be accessed using the dot notation
+# Example:
+class PersonNew:
+    def __init__(self, name):
+        self.name = name # name is an attribute of the class PersonNew
+        # self is a reference to the object itself
+
+person4 = PersonNew("Doe") # self is referring to the object person4
+person5 = PersonNew("Smith") # self is referring to the object person5
+print(person4.name) # Doe
+print(person5.name) # Smith
+print(person3.name) # Jane
+
+# Modifying attributes from outside the class
+
+person4.some_attribute = "some value"
+print(person4.some_attribute) # some value
+
+person4.name = "Name changed"
+print(person4.name) # Name changed
