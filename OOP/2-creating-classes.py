@@ -72,3 +72,18 @@ print(person4.some_attribute) # some value
 
 person4.name = "Name changed"
 print(person4.name) # Name changed
+
+# Example:
+class Fruit:
+    def __init__(self, name, calories):
+        self.name = name
+        self.calories = calories
+
+a = Fruit("Apple", 100)
+b = Fruit("Banana", 200)
+a.color = "Red"
+print(a.name, a.calories, a.color) # Apple 100 Red
+print(b.name, b.calories) # Banana 200
+
+# Purpose of the Class
+# Classes are used to create new user-defined data structures that contain arbitrary information about something
