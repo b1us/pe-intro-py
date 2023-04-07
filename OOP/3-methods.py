@@ -100,3 +100,27 @@ student1.get_age() # None
 print(student1.age) # None
 student1.set_age(20)
 print(student1.age) # 20
+
+# Example: create a class called Counter
+# This class will keep track of the number of times in increase or decrease state
+class Counter:
+    def __init__(self):
+        self.count = 0
+
+    def increment(self):
+        self.count += 1
+    
+    def decrement(self):
+        self.count -= 1
+
+    def print_count(self):
+        print(f"The current count is {self.count}")
+
+counter1 = Counter()
+counter1.print_count() # The current count is 0
+counter1.increment()
+counter1.print_count() # The current count is 1
+counter1.increment()
+counter1.print_count() # The current count is 2
+counter1.decrement()
+counter1.print_count() # The current count is 1
