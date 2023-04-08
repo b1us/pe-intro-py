@@ -124,3 +124,42 @@ counter1.increment()
 counter1.print_count() # The current count is 2
 counter1.decrement()
 counter1.print_count() # The current count is 1
+
+# Locking the attributes
+# We can lock the attributes so that they cannot be changed
+# We can do this by using the __slots__ attribute
+class Counter1:
+    def __init__(self):
+        self.count = 0
+        self.locked = False
+
+    def increment(self):
+        if self.locked:
+            raise Exception("The counter is locked")
+        self.count += 1
+
+    def decrement(self):
+        if self.locked:
+            raise Exception("The counter is locked")
+        self.count -= 1
+
+    def print_count(self):
+        print(f"The current count is {self.count}")
+
+    def toggle_lock(self):
+        self.locked = not self.locked
+
+counter1 = Counter1()
+counter1.print_count() # The current count is 0
+counter1.increment() # The current count is 1
+counter1.increment() # The current count is 2
+counter1.decrement() # The current count is 1
+counter1.toggle_lock()
+# counter1.increment() # Exception: The counter is locked
+# counter1.decrement() # Exception: The counter is locked
+counter1.toggle_lock()
+counter1.increment() # The current count is 2
+counter1.decrement() # The current count is 1
+
+
+
