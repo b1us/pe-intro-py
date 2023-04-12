@@ -38,3 +38,21 @@ p.salary = 100
 print(p.salary) # 100
 # p.salary = -100
 # print(p.salary) # ValueError: The salary can not be negative
+
+# New or prevered way to use property
+class Person: # most of the time the naming is singular
+    def __init__(self, name):
+        self.name = name
+        self._salary = 0
+
+    @property # known as a property (@ = decorator)
+    def salary(self): # this is a getter (.salary getter)
+        return round(self._salary)
+    
+    @salary.setter # this is a setter (salary : follows the name of the getter property)
+    def salary(self, salary):
+        if salary < 0:
+            raise ValueError("The salary can not be negative")
+        self._salary = salary
+
+p = Person("John")
