@@ -56,3 +56,23 @@ class Person: # most of the time the naming is singular
         self._salary = salary
 
 p = Person("John")
+
+# Other examples
+class Time:
+    def __init__(self, second):
+        self._second = second
+
+    @property
+    def second(self):
+        return self._second
+    
+    @second.setter
+    def second(self, second):
+        if second < 0 or second > 60:
+            raise ValueError("Invalid!")
+        self._second = second
+
+t = Time(54)
+print(t.second) # 54
+# t.second = 100
+# print(t.second) # ValueError: Invalid!
