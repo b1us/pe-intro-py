@@ -20,3 +20,10 @@ print(Car1.wheels) # 4
 
 Car1.wheels = 12
 print(Car1.wheels) # 12
+
+# access class attributes using class name or instance name
+c1 = Car1('BMW', 'X5')
+c2 = Car1('Audi', 'A6')
+print(c1.wheels) # 12
+print(c2.wheels) # 12
+print(Car1.wheels) # 12
