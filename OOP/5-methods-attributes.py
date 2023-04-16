@@ -27,3 +27,18 @@ c2 = Car1('Audi', 'A6')
 print(c1.wheels) # 12
 print(c2.wheels) # 12
 print(Car1.wheels) # 12
+
+# instance attributes override class attributes
+class Car2:
+    wheels = 4 # class attribute
+
+    def __init__(self, make, model): # instance method
+        self.make = make # instance attribute
+        self.model = model # instance attribute
+        self.wheels = 5 # instance attribute
+
+c3 = Car2('BMW', 'X5')
+c4 = Car2('Audi', 'A6')
+print(c3.wheels) # 5
+print(c4.wheels) # 5
+print(Car2.wheels) # 4
