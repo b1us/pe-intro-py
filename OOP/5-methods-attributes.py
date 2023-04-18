@@ -58,3 +58,27 @@ c7 = Car3('Toyota', 'Camry')
 print(c5.number_of_car) # 3
 print(c6.number_of_car) # 3
 print(c7.number_of_car) # 3
+
+
+# Class Methods
+# Class methods are methods that are bound to the class and not the object of the class (instance)
+
+class Car4:
+    number_of_car = 0 # class attribute
+
+    def __init__(self, make, model): # instance method
+        self.make = make # instance attribute
+        self.model = model # instance attribute
+        Car4.number_of_car += 1 # class attribute
+
+    @classmethod # can only access class attributes, not instance attributes
+    def get_number_of_car(cls): # cls is the class itself
+        return cls.number_of_car
+    
+c8 = Car4('BMW', 'X5')
+c9 = Car4('Audi', 'A6')
+c10 = Car4('Toyota', 'Camry')
+print(Car4.get_number_of_car()) # 3
+print(c8.get_number_of_car()) # 3
+print(c9.get_number_of_car()) # 3
+print(c10.get_number_of_car()) # 3
