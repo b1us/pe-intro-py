@@ -82,3 +82,26 @@ print(Car4.get_number_of_car()) # 3
 print(c8.get_number_of_car()) # 3
 print(c9.get_number_of_car()) # 3
 print(c10.get_number_of_car()) # 3
+
+# Class Methods and Attributes
+
+class Circle:
+    pi = 3.14 # class attribute
+
+    @classmethod # can only access class attributes, not instance attributes
+    def area(cls, radius): 
+        return cls.pi * (radius ** 2)
+    
+    @classmethod
+    def perimeter(cls, radius):
+        return 2 * cls.pi * radius
+    
+    @classmethod
+    def get_area_and_perimeter(cls, radius):
+        return cls.area(radius), cls.perimeter(radius)
+    
+print(Circle.area(5)) # 78.5
+print(Circle.perimeter(5)) # 31.400000000000002
+print(Circle.get_area_and_perimeter(5)) # (78.5, 31.400000000000002)
+
+# Class methods and attributes can only access class attributes, not instance attributes
