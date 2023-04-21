@@ -18,3 +18,8 @@ s2 = Student('Jane', [100, 90, 80])
 print(s1.average_grades(s1.grades)) # 80.0
 print(s2.average_grades(s2.grades)) # 90.0
 print(Student.average_grades(s1.grades + s2.grades)) # 85.0
+
+# Static Attributes
+
+# Static attributes are attributes that are bound to a class.
+# They are the same as class attributes.
