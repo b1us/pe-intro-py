@@ -4,9 +4,16 @@
 # Have no access to the class (cls) nor the instance (self)
 
 class Student:
+    grade_bump = 2.0
+
     def __init__(self, name, grades=[]):
         self.name = name
         self.grades = grades
+
+    @classmethod
+    def average_grades_bump(cls, grades):
+        average = cls.average_grades(grades)
+        return min(average + cls.grade_bump, 100)
 
     @staticmethod
     def average_grades(grades):
