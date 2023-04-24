@@ -10,6 +10,9 @@ class Student:
         self.name = name
         self.grades = grades
 
+    def average(self): # instance method
+        return sum(self.grades) / len(self.grades)
+
     @classmethod
     def average_grades_bump(cls, grades):
         average = cls.average_grades(grades)
@@ -30,3 +33,5 @@ print(Student.average_grades(s1.grades + s2.grades)) # 85.0
 
 # Static attributes are attributes that are bound to a class.
 # They are the same as class attributes.
+
+# Class methods can access anything related to the class, including static attributes.
