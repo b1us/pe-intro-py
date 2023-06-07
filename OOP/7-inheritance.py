@@ -6,3 +6,23 @@
 
 # Polymorphism is the concept by which we can define methods in the child class with the same name as defined in their parent class. This helps us in defining a method in the child class that can perform a specific action depending on the child class instance.
 
+# Supercalss / base class / parent class
+class Person:
+    def __init__(self, first_name, last_name):
+        self.first_name = first_name
+        self.last_name  = last_name
+
+    def say_hello(self):
+        print(f"Hello, my name is {self.first_name} {self.last_name}")
+
+# Inheritance / child class / derived class / subclass
+class Employee(Person):
+    def test(self):
+        print("test")
+
+e = Employee("John", "Doe")
+e.say_hello() # Hello, my name is John Doe
+
+p = Person("Jane", "Doll")
+p.say_hello() # Hello, my name is Jane Doll
+# p.test() # AttributeError: 'Person' object has no attribute 'test'
