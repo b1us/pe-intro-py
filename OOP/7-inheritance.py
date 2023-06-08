@@ -16,13 +16,23 @@ class Person:
         print(f"Hello, my name is {self.first_name} {self.last_name}")
 
 # Inheritance / child class / derived class / subclass
-class Employee(Person):
+class Employee1(Person):
     def test(self):
         print("test")
 
-e = Employee("John", "Doe")
+e = Employee1("John", "Doe")
 e.say_hello() # Hello, my name is John Doe
 
 p = Person("Jane", "Doll")
 p.say_hello() # Hello, my name is Jane Doll
 # p.test() # AttributeError: 'Person' object has no attribute 'test'
+
+# Overriding methods in child class using super()
+class Employee2(Person):
+    def say_hello_employee(self):
+        print("---say hello from child class---")
+        super().say_hello()
+        print("--------------------------------")
+
+e2 = Employee2("Jordan", "Donkey")
+e2.say_hello_employee() 
