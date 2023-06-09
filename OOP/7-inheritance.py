@@ -35,4 +35,18 @@ class Employee2(Person):
         print("--------------------------------")
 
 e2 = Employee2("Jordan", "Donkey")
-e2.say_hello_employee() 
+e2.say_hello_employee()
+
+# Method overloading example 2
+class Employee3(Person):
+    def __init__(self, first_name, last_name, salary):
+        super().__init__(first_name, last_name) # call the parent class constructor is mandatory
+        self.salary = salary
+
+    def say_hello(self):
+        super().say_hello()
+        print(f"My salary is {self.salary}")
+        
+e3 = Employee3("Alice", "Wonderful", 10000)
+e3.say_hello() # Hello, my name is Alice Wonderful
+# e3.test() # AttributeError: 'Employee3' object has no attribute 'test'
