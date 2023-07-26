@@ -50,3 +50,15 @@ class Employee3(Person):
 e3 = Employee3("Alice", "Wonderful", 10000)
 e3.say_hello() # Hello, my name is Alice Wonderful
 # e3.test() # AttributeError: 'Employee3' object has no attribute 'test'
+
+class Manager(Employee3):
+    def __init__(self, first_name, last_name, salary, department):
+        super().__init__(first_name, last_name, salary)
+        self.department = department
+
+    def say_hello(self):
+        super().say_hello()
+        print(f"I am a manager in {self.department} department and my salary is {self.salary}")
+
+m1 = Manager("Bob", "Marley", 20000, "IT")
+m1.say_hello() # Hello, my name is Bob Marley
