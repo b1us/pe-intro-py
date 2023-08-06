@@ -62,3 +62,15 @@ class Manager(Employee3):
 
 m1 = Manager("Bob", "Marley", 20000, "IT")
 m1.say_hello() # Hello, my name is Bob Marley
+
+class Owner(Person):
+    def __init__(self, first_name, last_name, company):
+        super().__init__(first_name, last_name)
+        self.company = company
+
+    def say_hello(self):
+        super().say_hello()
+        print(f"I am the owner of {self.company}")
+
+o1 = Owner("John", "Doe", "ABC")
+o1.say_hello() # Hello, my name is John Doe
