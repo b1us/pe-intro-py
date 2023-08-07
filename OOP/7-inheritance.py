@@ -74,3 +74,11 @@ class Owner(Person):
 
 o1 = Owner("John", "Doe", "ABC")
 o1.say_hello() # Hello, my name is John Doe
+
+# Check if an object is an instance of a class
+print(isinstance(o1, Owner)) # True
+print(isinstance(o1, Person)) # True
+print(isinstance(o1, Employee1)) # False
+print(isinstance(o1, Employee2)) # False
+print(isinstance(o1, Employee3)) # False
+print(isinstance(o1, Manager)) # False
