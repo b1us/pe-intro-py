@@ -82,3 +82,48 @@ print(isinstance(o1, Employee1)) # False
 print(isinstance(o1, Employee2)) # False
 print(isinstance(o1, Employee3)) # False
 print(isinstance(o1, Manager)) # False
+
+
+# Multiple inheritance
+class A:
+    def __init__(self):
+        print("A init")
+
+class B:
+    def __init__(self):
+        print("B init")
+
+class C(A, B):
+    pass
+
+c = C() # A init
+
+class D(B, A):
+    pass
+
+d = D() # B init
+
+class E:
+    pass
+
+class F(E, A):
+    pass
+
+f = F() # A init
+
+class G:
+    def __init__(self):
+        print("G init")
+
+class H:
+    def __init__(self):
+        print("H init")
+
+class I(G, H):
+    def __init__(self):
+        super().__init__()
+        print("I init")
+
+        # Method Resolution Order (MRO) determines the order of method lookup for classes involved in multiple inheritance.
+
+i = I() # G init
