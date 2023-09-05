@@ -127,3 +127,23 @@ class I(G, H):
         # Method Resolution Order (MRO) determines the order of method lookup for classes involved in multiple inheritance.
 
 i = I() # G init
+
+# Duck typing
+
+class Duck:
+    def swim(self):
+        print("Duck can swim")
+
+    def fly(self):
+        print("Duck can fly")
+
+class Whale:
+    def swim(self):
+        print("Whale can swim")
+
+animals = [Duck(), Duck(), Whale()]
+
+for animal in animals:
+    animal.swim() # Duck can swim, Whale can swim
+    # animal.fly() # AttributeError: 'Whale' object has no attribute 'fly'
+    # Duck typing allows us to treat objects differently based on the methods they support, rather than their type. Here we can call swim on both Duck and Whale objects even though they are of different types. This is because both of them support the swim method. However, we cannot call fly on Whale object because it does not support the fly method.
