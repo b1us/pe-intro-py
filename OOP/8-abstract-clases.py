@@ -14,3 +14,15 @@
 # We can't actualy make something abstract. We can't force it to never be able to be instantiated.
 
 # Abstract Class Example
+class AbstractGame: # do not have to be named AbstractSomething, just for education purposes only.
+    # Abstract method, as general as possible
+    @staticmethod
+    def start():
+        while True:
+            start = input("Would you like to start the game? (y/n)")
+            if start.lower() == "y":
+                break
+
+    @staticmethod
+    def end():
+        print("Thank you for playing!")
