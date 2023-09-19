@@ -16,13 +16,23 @@
 # Abstract Class Example
 class AbstractGame: # do not have to be named AbstractSomething, just for education purposes only.
     # Abstract method, as general as possible
-    @staticmethod
-    def start():
+    def start(self):
         while True:
             start = input("Would you like to start the game? (y/n)")
             if start.lower() == "y":
-                break
+                break        
+        self.play()
 
-    @staticmethod
-    def end():
+    def end(self):
         print("Thank you for playing!")
+        self.reset()
+
+    # Abstract method, subclasses must implement this 
+    # This abstract method is not implemented here, but it only works if the subclasses implement it
+    def play(self):
+        raise NotImplementedError("You must provide an implementation for play() mehtod in child classes")
+    
+    def reset(self):
+        raise NotImplementedError("You must provide an implementation for reset() mehtod in child classes")
+
+# Concrete Subclass
