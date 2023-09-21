@@ -14,6 +14,9 @@
 # We can't actualy make something abstract. We can't force it to never be able to be instantiated.
 
 # Abstract Class Example
+
+import random
+
 class AbstractGame: # do not have to be named AbstractSomething, just for education purposes only.
     # Abstract method, as general as possible
     def start(self):
@@ -36,3 +39,31 @@ class AbstractGame: # do not have to be named AbstractSomething, just for educat
         raise NotImplementedError("You must provide an implementation for reset() mehtod in child classes")
 
 # Concrete Subclass
+class RandumGuesser(AbstractGame):
+    def __init__(self, rounds):
+        self.rounds = rounds
+        self.round = 0
+
+    def reset(self):
+        self.round = 0
+
+    def play(self):
+        while self.round < self.rounds:
+            self.round += 1
+
+            print(f"Welcome to round {self.round}. I'm thinking of a random number between 1-10. Guess what it is:")
+
+            random_num = random.randint(1, 10)
+
+            while True:
+                guess = int(input("Your guess: "))
+                if guess == random_num:
+                    print("You guessed correctly!")
+                    break
+                else:
+                    print("Sorry, that was not correct. Try again!")
+
+        self.end()
+
+game = RandumGuesser(3)
+game.play()
