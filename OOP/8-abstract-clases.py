@@ -17,14 +17,14 @@
 
 import random
 
-class AbstractGame: # do not have to be named AbstractSomething, just for education purposes only.
-    # Abstract method, as general as possible
+class AbstractGame: # Abstract class, does not have to be named AbstractSomething, just for education purposes only.
+    # Concrete methods, it has implementation
     def start(self):
         while True:
             start = input("Would you like to start the game? (y/n)")
             if start.lower() == "y":
                 break        
-        self.play()
+        self.play() # here is the imlementation
 
     def end(self):
         print("Thank you for playing!")
@@ -66,4 +66,4 @@ class RandumGuesser(AbstractGame):
         self.end()
 
 game = RandumGuesser(3)
-game.play()
+game.start ()
