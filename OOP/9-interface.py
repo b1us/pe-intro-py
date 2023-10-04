@@ -36,3 +36,15 @@ class JavaCode(RunCodeInterface):
     
     def execute_code(self):
         print("Execute Java Code")
+
+# Different from strong type language, in Python the parameter type is not enforced,
+# only the interface/abstract methods need to be implemented
+def run_code(code : RunCodeInterface):
+    code.compile_code()
+    code.execute_code()
+
+go = GoCode()
+run_code(go)
+
+java = JavaCode()
+run_code(java)
